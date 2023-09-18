@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(imagemFundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fdf2e5;
+}
+
+/*aqui arrumados o header, a faixa vermelha */
+
+header {
+    background-color: #B53440;
+    color: #fff;
+    padding: 1vw;
+    text-align: center;
+}
+
+/*LOGO DAS REDES SOCIAIS*/
+nav ul {
+    list-style: none;
+    padding: 1vh;
+    display: flex;
+    margin-left: 84vw;  
+}
+
+/*BARRA DE PESQUISA*/
+.caixa-de-texto {
+    margin-top: 4vh;
+    margin-bottom: 40px;
+    margin-left: 32vw;
+    position: absolute;
+    background-color: #EDE7DE;
+    width: 34vw;
+    height: 4.2vh;
+    padding: 1vh;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.barra-de-pesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #7e0d1a;
+    font-size: 16vh;
+    line-height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    margin-left: 1vw;
+    width: 30vw;
+}
+
+::-webkit-input-placeholder{
+    color:#636363;
+}
+.botao-pesquisa {
+    width: 2vw;
+    height: 4.3vh;
+    border-radius: 50px;
+    background:#EDE7DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.caixa-de-texto:hover > .botao-pesquisa {
+    background: #B53440;
+    
+}
+
+/*AQUI ARRUMAMOS AIMAGEM DA LOGO*/
+#img {
+    position: absolute;
+    display: flex;
+    width: 11vw;
+    height: 22vh;
+    margin-top: -18.2vh;
+    margin-left: 1vw;
+}
+
+
+/*BOTOES PARA AUMENTAR E DIMINUIR FONTE*/
+/**botão aumentar*/
+#aumentar-fonte{
+    text-decoration: none;
+    width: 12.5vw;
+    height: 6.1vh;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #000000;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 20px;
+    transition: .3s all ease;
+    margin-top: 25.5vh;
+    position: absolute;
+    margin-left: 36vw;
+    font-size: 1vw;
+}
+
+   
+/*botão diminuir*/
+#diminuir-fonte {
+    text-decoration: none;
+    width: 12.5vw;
+    height: 6.1vh;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #000000;
+    border: 2px solid transparent;
+    color:#fdf2e5;
+    border-radius: 20px;
+    transition: .3s all ease;
+    margin-top: 25.5vh;
+    margin-left: 50vw;
+    font-size: 1vw;
+}
+
+#content {
+    font-size: 1em;
+}
+
+/*ESTILIZANDO OS BOTÕES*/
+
+#aumentar-fonte:hover {
+    background-color: #7d1b26;
+    color: rgb(255, 247, 247);
+    border: 2px solid #7e0d1a;
+
+  }
+
+  #diminuir-fonte:hover {
+    background-color: #7d1b26;
+    color: rgb(255, 247, 247);
+    border: 2px solid #7e0d1a;
+  }
+
+
+  /*FIM DOS BOTÕES*/
+
+  /*CARROSSEL*/
+  #imgSlide {
+    width: 1700px;
+    
+}
+
+.slider {
+    margin-top: 50px;
+    margin-left: 170px;
+    width: 1700px;
+    height: 700px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    width: 1300%;
+    height: 700px;
+    display: flex;
+   
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 1300px;
+    height: 700px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 1300px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.manual-btn {
+    border: 4px solid  #000000;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover {
+    background: #000000;
+
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+
+/*FIM DO CARROSSEL*/
+
+/*CATEGORIAS: PRATOS, SOBREMESAS E DRINKS* *ELES ESTÃO EM OUTRO STYLE*/
+
+
+/*PARTE DAS RECOMENDAÇÕES*/
+
+#linha {
+    margin-top: -120px;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#B53440;
+   }
+
+   /*PARTE DO VÍDEO*/
+.minha-div {
+    position: absolute;
+    display: block;
+    margin-top: -65vh;
+    background-color: #dfdcdc; 
+    background-image: url('imagemFundo.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 2000px;
+}
+
+.sobrenos {
+    position: absolute;
+    margin-top: 1500px;
+    background-color:  #fdf2e5; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 700px;
+}
+  .about-container {
+    width: 66vw;
+    height: 630px;
+    margin-left: 15vw;
+    margin-top: 1vh;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 24px 24px 30px #757575;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 0.5vw;
+  }
+  .image-container{
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-container video {
+    width: 800px;
+    height: 100%;
+    margin: 15px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+    margin-left: 45px;
+}
+.text-container h1{
+    line-height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    font-size: 3vw;
+    padding: 20px 0px;
+    color: #c05353;
+    line-height: 60px;
+}
+.playlist {
+    text-align: center;
+    padding: px;
+}
+::cue {
+   
+    background-color: #4e0000;
+    color: #fdf2e5;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+footer {
+    margin-top: 800px;
+    background-color: #B53440;
+    color: #fff;
+    padding: 20px 0;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-logo img {
+   width: 300px;
+   margin-top: 40px;
+}
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+footer .footer-links li {
+    margin-right: 20px;
+}
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+footer .footer-info {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+#mapa {
+    margin-left: -15vw;
+}
+  
+
+
+  
+  
+  
+
+
+
+
+
+
+
+  

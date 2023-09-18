@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fdf2e5;
+}
+
+
+header {
+    background-color: #B53440;
+    color: #fff;
+    padding: 65px;
+    text-align: center;
+}
+
+#img {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 41vw;
+}
+
+#categorias {
+    margin-top: 1vh;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#B53440;
+   }
+   #linha {
+    margin-top: -120px;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#B53440;
+   }
+
+   .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -2vh;
+    
+}
+.card{
+    width: 28vw;
+   
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow:  0px 12px 20px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+   height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: #B53440;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-content p {
+    color: #000000;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.card-content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 28px;
+    color: #f0f0f0;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+#aumentar-fonte{
+    text-decoration: none;
+    width: 12.5vw;
+    height: 6vh;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #000000;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 20px;
+    transition: .3s all ease;
+    position: absolute;
+    margin-left: 35vw;
+    font-size: 1vw;
+}
+
+   
+/*botão diminuir*/
+#diminuir-fonte {
+    text-decoration: none;
+    width: 12.5vw;
+    height: 6vh;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: #000000;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 20px;
+    transition: .3s all ease;
+
+    margin-left: 50vw;
+    font-size: 1vw;
+}
+#aumentar-fonte:hover {
+    background-color: #7d1b26;
+    color: rgb(255, 247, 247);
+    border: 2px solid #7e0d1a;
+
+  }
+
+  #diminuir-fonte:hover {
+    background-color: #7d1b26;
+    color: rgb(255, 247, 247);
+    border: 2px solid #7e0d1a;
+  }
